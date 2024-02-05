@@ -5,3 +5,31 @@
 <br>
 <!-- </p><input [value]='data' (input)='data=$event.target'> -->
 <p>your Name : {{data}}</p>
+<div style="text-align: center;">
+<table border="2" style="text-align: center;">
+ <tr>
+  <th>EmpId</th>
+  <th>name</th>
+  <th>Address</th>
+ </tr>
+ <tr *ngFor="let employee of employees" >
+  <td>{{employee.empId}}</td>
+  <td>{{employee.name | uppercase}}</td>
+  <td>{{employee.address}}</td>
+
+ </tr>
+ 
+</table>
+</div>
+<br>
+<div>
+  {{dob}}
+  <br>
+  medium:{{dob | date:"medium"}}
+  <br>
+  Specific format : {{dob | date:'dd-mm-yyyy'}}
+  <br>
+  medium time : {{dob | date:'medium Time'}}
+  <br>
+  salary : {{salary|currency:'USD':true}}
+</div>

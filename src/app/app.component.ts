@@ -35,6 +35,9 @@ export class AppComponent {
   ]
   dob = new Date(5-2-2024);
   salary:number = 5000000;
+  name :string= "dineshyaduvanshee";
+  position : string= "sofewere devoloper";
+  work : string= "softwere devolopment";
   
 }
 

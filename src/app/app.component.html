@@ -25,11 +25,17 @@
 <div>
   {{dob}}
   <br>
-  medium:{{dob | date:"medium"}}
+  medium:{{dob | date:"medium" | lowercase}}
   <br>
   Specific format : {{dob | date:'dd-mm-yyyy'}}
   <br>
   medium time : {{dob | date:'medium Time'}}
   <br>
   salary : {{salary|currency:'USD':true}}
+  <br>
+   full Date : {{dob | date: 'fullDate' | uppercase}} 
 </div>
+<h2 style="text-align: center; background-color: blueviolet;">!!Pipes Example!!</h2>
+<h4 style="text-align: center; background-color: chartreuse;">{{name | uppercase}} - {{position  | lowercase}}</h4>
+<h2 style="text-align: center; background-color: cornflowerblue;">!!Slice Example!!</h2>
+<h4 style="text-align: center; background-color: cadetblue;">{{work | slice : 3}}</h4>
